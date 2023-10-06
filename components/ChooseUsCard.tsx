@@ -8,6 +8,7 @@ const renderChooseUseData = chooseUsData.map((data, index) => {
       className={`border-2 border-white lg:border-none p-2 rounded-2xl flex flex-col-reverse md:flex ${
         index % 2 == 0 ? `md:flex-row` : `md:flex-row-reverse`
       } justify-center items-center gap-6 lg:gap-10 text-black md:h-auto`}
+      key={index}
     >
       <div className="flex flex-col lg:w-1/3 gap-10 md:h-auto">
         <h1 className="text-xl lg:text-4xl font-bold text-center line-clamp-3">

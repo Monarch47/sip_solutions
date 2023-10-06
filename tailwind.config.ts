@@ -3,7 +3,12 @@ import type { Config } from 'tailwindcss'
 
 const plugin = require('tailwindcss/plugin')
 
-
+interface TextShadow {
+  sm: string;
+  DEFAULT: string;
+  lg: string;
+  primary: string;
+}
 
 const config: Config = {
   content: [
