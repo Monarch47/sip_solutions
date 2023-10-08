@@ -8,7 +8,7 @@ const renderTestimonialCardData = testmonialCardData.map(
     return (
       <div
         key={index}
-        className="h-auto w-2/3 lg:w-1/5 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
+        className="h-auto lg:h-96 w-2/3 lg:w-1/4 2xl:w-1/5 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
       >
         <div className="flex gap-4 justify-center">
           <img

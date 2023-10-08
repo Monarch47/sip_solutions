@@ -28,10 +28,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-screen-md mx-auto text-black     "
-    >
+    <form onSubmit={handleSubmit} className="md:w-[42%] xl:w-1/3 text-black">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <input
@@ -40,7 +37,7 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Name"
-            className="w-full px-4 py-2 border rounded-lg "
+            className="w-full px-4 py-2 border rounded-lg bg-primary-gray"
           />
         </div>
         <div>
@@ -50,7 +47,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="w-full px-4 py-2 border rounded-lg "
+            className="w-full px-4 py-2 border rounded-lg bg-primary-gray"
           />
         </div>
       </div>
@@ -60,7 +57,7 @@ const ContactForm: React.FC = () => {
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
-          className="w-full px-4 py-2 mt-4 border rounded-lg "
+          className="w-full px-4 py-2 mt-4 border rounded-lg bg-primary-gray"
           rows={5}
         />
       </div>

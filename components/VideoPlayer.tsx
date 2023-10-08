@@ -12,7 +12,8 @@ const VideoPlayer = (props: Props) => {
       muted
       loop
       preload=""
-      className="w-full min-h-screen md:h-full"
+      className="absolute w-auto  
+      min-w-full min-h-full max-w-full"
     ></video>
   );
 };

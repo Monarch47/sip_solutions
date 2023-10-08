@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 flex flex-col gap-10">
-      <div className="container w-[90vw] mx-auto lg:flex lg:justify-center text-center items-center h-1/2">
+    <footer className="bg-black text-white flex flex-col gap-4">
+      <div className="container w-[90vw] flex flex-col gap-16 mx-auto lg:flex lg:justify-center text-center items-center h-1/2">
         {/* Column 1: Navigation */}
         <div className="lg:w-1/4 text-center h-1/3">
           <h3 className="text-2xl font-semibold mb-2">Navigation</h3>
@@ -49,7 +49,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center">
         <p>&copy; 2023 Robnett Technologies. All rights reserved.</p>
-        <p>Made by Anuj Rawat</p>
+        <p>Made by Mayank</p>
       </div>
     </footer>
   );

@@ -6,7 +6,7 @@ function NavbarNew() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full bg-[rgba(0,0,0,0.95)] md:bg-[rgba(0,0,0,0.3)] fixed top-0 left-0 right-0 z-10 font-manrope">
+      <nav className="w-full bg-[rgba(0,0,0,0.9)] md:bg-[rgba(0,0,0,0.9)] fixed top-0 left-0 right-0 z-10 font-manrope">
         <div className="justify-between px-4 mx-auto lg:w-full md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -44,22 +44,22 @@ function NavbarNew() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
                 <li className="text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent flex items-center justify-center h-16">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#home" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
                 <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
                 <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#services" onClick={() => setNavbar(!navbar)}>
                     Serivces
                   </Link>
                 </li>
                 <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>

@@ -26,6 +26,7 @@ const config: Config = {
       colors: {
         'primary-orange' : '#f26419',
         'primary-teal' : '#33658a',
+        'primary-gray' : '#c6c6c6e7'
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
@@ -40,7 +41,10 @@ const config: Config = {
       },
       minHeight: {
         '1/2': '50%',
-      }
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
     },
   },
   plugins: [
