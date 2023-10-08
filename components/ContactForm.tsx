@@ -28,7 +28,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="md:w-[42%] xl:w-1/3 text-black">
+    <form
+      onSubmit={handleSubmit}
+      className="md:w-[42%] xl:w-1/3 2xl:w-1/4 text-black"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <input
