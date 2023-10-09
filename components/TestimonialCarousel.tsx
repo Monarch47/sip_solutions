@@ -17,7 +17,7 @@ const renderCarouselItems = testmonialCardData.map((testimonial, index) => {
   return (
     <SwiperSlide
       key={index}
-      className="w-4/5 flex items-center text-center box-border"
+      className="w-full flex items-center text-center box-border py-16 px-10 rounded-3xl"
     >
       <TestimonialCard
         name={testimonial.name}
@@ -58,11 +58,11 @@ const TestimonialCarousel = (props: Props) => {
     <Swiper
       // install Swiper modules
       modules={[Pagination, Scrollbar, Autoplay]}
-      spaceBetween={30}
+      spaceBetween={10}
       slidesPerView={slidesPerView}
       autoplay={{ delay: 5000 }}
       pagination={{ clickable: true }}
-      className="w-2/3 h-auto flex items-center text-center box-border justify-center py-4"
+      className="w-3/4 flex items-center text-center box-border justify-center rounded-3xl"
     >
       {renderCarouselItems}
     </Swiper>

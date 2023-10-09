@@ -99,11 +99,11 @@ export default function Home() {
       </div>
       {/* Testimonials and Contact */}
       <div className="min-h-screen relative flex flex-col items-center">
-        <div className="min-h-1/2 bg-primary-orange w-full flex flex-col items-center py-28 gap-16">
+        <div className="min-h-1/2 bg-primary-orange w-full flex flex-col items-center py-20 gap-6">
           <h1 className="text-4xl lg:text-6xl font-semibold text-center flex text-shadow-primary shadow-white text-black">
             Testimonials
           </h1>
-          <div className="w-[90vw] flex flex-col justify-center items-center">
+          <div className="w-[90vw] flex flex-col justify-center items-center ">
             <TestimonialCarousel />
           </div>
         </div>

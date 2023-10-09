@@ -13,7 +13,7 @@ const TestimonialCard = (props: Props) => {
   return (
     <div
       key={props.index}
-      className="h-96 md:h-auto lg:h-96 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
+      className="h-96 md:h-auto lg:h-96 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-carousel shadow-black"
     >
       <div className="flex gap-4 justify-center">
         <img

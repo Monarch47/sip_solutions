@@ -38,6 +38,9 @@ const config = {
       borderRadius: {
         '4xl': '2rem',
       },
+      boxShadow: {
+        'carousel': '5px 5px 40px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [
