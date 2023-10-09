@@ -85,16 +85,4 @@ export const testmonialCardData = [
         review: "Empowering my business with seamless cloud solutions, fortified security, and expert support. A game-changer for any company seeking transformative cloud experiences.", 
         logo: '/images/logoF.png'
     },
-    {
-        name: "Rohit Sharma",
-        designation: "CEO, Tech Innovators",
-        review: "Empowering my business with seamless cloud solutions, fortified security, and expert support. A game-changer for any company seeking transformative cloud experiences.", 
-        logo: '/images/logoF.png'
-    },
-    {
-        name: "Rohit Sharma",
-        designation: "CEO, Tech Innovators",
-        review: "Empowering my business with seamless cloud solutions, fortified security, and expert support. A game-changer for any company seeking transformative cloud experiences." ,
-        logo: '/images/logoF.png'
-    },
 ]

@@ -13,7 +13,7 @@ const TestimonialCard = (props: Props) => {
   return (
     <div
       key={props.index}
-      className="h-auto lg:h-96 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
+      className="h-96 md:h-auto lg:h-96 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
     >
       <div className="flex gap-4 justify-center">
         <img
@@ -21,7 +21,7 @@ const TestimonialCard = (props: Props) => {
           className="w-12 h-12 aspect-square rounded-full"
         />
         <div>
-          <h1 className="text-md lg:text-xl text-black font-semibold md:bg-green-300 lg:bg-red-300 xl:bg-yellow-300 2xl:bg-blue-300">
+          <h1 className="text-md lg:text-xl text-black font-semibold">
             {props.name}
           </h1>
           <h1 className="text-md text-black">{props.designation}</h1>

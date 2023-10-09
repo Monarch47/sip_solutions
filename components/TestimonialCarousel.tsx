@@ -9,9 +9,7 @@ import TestimonialCard from "./TestimonialCard";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 type Props = {};
 
@@ -19,7 +17,7 @@ const renderCarouselItems = testmonialCardData.map((testimonial, index) => {
   return (
     <SwiperSlide
       key={index}
-      className="swiper-slide-container md:bg-green-300 lg:bg-red-300 xl:bg-yellow-300 2xl:bg-blue-300 flex justify-center items-center text-center"
+      className="w-4/5 flex items-center text-center box-border"
     >
       <TestimonialCard
         name={testimonial.name}
@@ -33,15 +31,13 @@ const renderCarouselItems = testmonialCardData.map((testimonial, index) => {
 });
 
 const TestimonialCarousel = (props: Props) => {
-  const [slidesPerView, setSlidesPerView] = useState(1);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth == 768) {
-        setSlidesPerView(2);
-      } else if (window.innerWidth > 768) {
+      if (window.innerWidth >= 768) {
         setSlidesPerView(3);
-      } else if (window.innerWidth < 768) {
+      } else {
         setSlidesPerView(1);
       }
     };
@@ -57,20 +53,16 @@ const TestimonialCarousel = (props: Props) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-      centeredSlides={true}
-      spaceBetween={50}
+      modules={[Pagination, Scrollbar, Autoplay]}
+      spaceBetween={30}
       slidesPerView={slidesPerView}
-      // autoplay={{ delay: 5000 }}
-      navigation
+      autoplay={{ delay: 5000 }}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      className="bg-pink-300 w-full"
+      className="w-2/3 h-auto flex items-center text-center box-border justify-center py-4"
     >
       {renderCarouselItems}
     </Swiper>

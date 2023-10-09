@@ -54,13 +54,10 @@ body {
   color: #f26419;
 }
 
-.swiper-slide-container {
+.swiper-slide-container, .swiper {
   text-align: center;
-        font-size: 18px;
-        background: #fff;
   height:100%;
   margin:auto;
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;

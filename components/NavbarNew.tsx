@@ -43,26 +43,42 @@ function NavbarNew() {
               onClick={() => setNavbar(!navbar)}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent flex items-center justify-center h-16">
-                  <Link href="#home" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  href="#home"
+                  onClick={() => setNavbar(!navbar)}
+                  className="cursor-pointer"
+                >
+                  <li className="text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent flex items-center justify-center h-16">
                     Home
-                  </Link>
-                </li>
-                <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  </li>
+                </Link>
+                <Link
+                  href="#about"
+                  onClick={() => setNavbar(!navbar)}
+                  className="cursor-pointer"
+                >
+                  <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
                     About
-                  </Link>
-                </li>
-                <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#services" onClick={() => setNavbar(!navbar)}>
+                  </li>
+                </Link>
+                <Link
+                  href="#services"
+                  onClick={() => setNavbar(!navbar)}
+                  className="cursor-pointer"
+                >
+                  <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
                     Serivces
-                  </Link>
-                </li>
-                <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                  </li>
+                </Link>
+                <Link
+                  href="#contact"
+                  onClick={() => setNavbar(!navbar)}
+                  className="cursor-pointer"
+                >
+                  <li className="text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-primary-orange  border-primary-orange  md:hover:text-primary-orange md:hover:bg-transparent">
                     Contact
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
