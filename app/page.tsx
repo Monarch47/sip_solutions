@@ -108,7 +108,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="h-1/2 bg-white w-full flex flex-col justify-center items-center py-44 gap-16"
+          className="h-1/2 bg-white w-full flex flex-col justify-center items-center py-44 gap-16 "
           id="contact"
         >
           <h1 className="text-black text-5xl lg:text-6xl font-semibold text-shadow-primary shadow-primary-orange flex flex-col items-center justify-center">
