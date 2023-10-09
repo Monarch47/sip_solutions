@@ -9,7 +9,7 @@ export const chooseUsData = [
     {
         heading: "Discover Limitless Possibilities with Cloud Supremacy.",
         text: "Elevate your business with boundless scalability and flexibility, embracing a comprehensive suite of cloud-based tools for innovation and growth.",
-        image: '/images/images2.jpeg'
+        image: '/images/img9.jpg'
     },
     {
         heading: "Transforming Ideas to Reality, Innovation That Inspires, Ignites, and Amplifies.",

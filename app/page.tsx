@@ -76,7 +76,7 @@ export default function Home() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="bg-primary-orange flex flex-col p-16 items-center justify-center gap-16">
+      <div className="bg-primary-orange flex flex-col p-16 items-center justify-center gap-16 lg:gap-24">
         <h1 className="text-4xl md:text-6xl font-semibold text-center flex text-shadow-primary shadow-white text-black">
           Why Choose Us
         </h1>
