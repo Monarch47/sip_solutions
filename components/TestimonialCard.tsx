@@ -1,35 +1,35 @@
 import React from "react";
 import { testmonialCardData } from "@/content";
 
-type Props = {};
-
-const renderTestimonialCardData = testmonialCardData.map(
-  (testimonial, index) => {
-    return (
-      <div
-        key={index}
-        className="h-auto lg:h-96 w-2/3 lg:w-1/4 2xl:w-1/5 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
-      >
-        <div className="flex gap-4 justify-center">
-          <img
-            src={testimonial.logo}
-            className="w-12 h-12 aspect-square rounded-full"
-          />
-          <div>
-            <h1 className="text-md lg:text-xl text-black font-semibold">
-              {testimonial.name}
-            </h1>
-            <h1 className="text-md text-black">{testimonial.designation}</h1>
-          </div>
-        </div>
-        <h1 className="text-black">{testimonial.review}</h1>
-      </div>
-    );
-  }
-);
+type Props = {
+  name: string;
+  designation: string;
+  logo: string;
+  review: string;
+  index: number;
+};
 
 const TestimonialCard = (props: Props) => {
-  return <>{renderTestimonialCardData}</>;
+  return (
+    <div
+      key={props.index}
+      className="h-auto lg:h-96 bg-white flex flex-col rounded-3xl p-3 gap-10 items-center text-center shadow-lg shadow-black"
+    >
+      <div className="flex gap-4 justify-center">
+        <img
+          src={props.logo}
+          className="w-12 h-12 aspect-square rounded-full"
+        />
+        <div>
+          <h1 className="text-md lg:text-xl text-black font-semibold md:bg-green-300 lg:bg-red-300 xl:bg-yellow-300 2xl:bg-blue-300">
+            {props.name}
+          </h1>
+          <h1 className="text-md text-black">{props.designation}</h1>
+        </div>
+      </div>
+      <h1 className="text-black">{props.review}</h1>
+    </div>
+  );
 };
 
 export default TestimonialCard;

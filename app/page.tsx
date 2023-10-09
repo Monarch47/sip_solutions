@@ -7,9 +7,9 @@ import { aboutSectionParas } from "@/content";
 import NavbarNew from "@/components/NavbarNew";
 import ChooseUsCard from "@/components/ChooseUsCard";
 import ServicesCard from "@/components/ServicesCard";
-import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Home() {
   const aboutParas = aboutSectionParas.map((para, index) => {
@@ -104,7 +104,7 @@ export default function Home() {
             Testimonials
           </h1>
           <div className="w-[90vw] flex flex-col lg:flex-row gap-8 justify-center items-center">
-            <TestimonialCard />
+            <TestimonialCarousel />
           </div>
         </div>
         <div

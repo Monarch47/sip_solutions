@@ -1,16 +1,9 @@
 import { type } from 'os'
-import type { Config } from 'tailwindcss'
 
 const plugin = require('tailwindcss/plugin')
 
-interface TextShadow {
-  sm: string;
-  DEFAULT: string;
-  lg: string;
-  primary: string;
-}
 
-const config: Config = {
+const config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -24,9 +17,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'primary-orange' : '#f26419',
-        'primary-teal' : '#33658a',
-        'primary-gray' : '#c6c6c6e7'
+        'primary-orange': '#f26419',
+        'primary-teal': '#33658a',
+        'primary-gray': '#c6c6c6e7'
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
