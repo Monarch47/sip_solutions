@@ -39,3 +39,17 @@ body {
 .shadow-primary-white {
   box-shadow: 10px 5px 15px white;
 }
+
+.footer-nav > *:hover {
+  color: #f26419;
+  
+}
+
+.footer-contact > *:hover {
+  color: #f26419;
+  cursor: pointer;
+}
+
+.footer-follow > *:hover {
+  color: #f26419;
+}

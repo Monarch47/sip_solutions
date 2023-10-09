@@ -119,8 +119,8 @@ export default function Home() {
       </div>
       {/* Get started and footer */}
       <div className="relative flex flex-col items-center">
-        <div className="min-h-1/2 bg-primary-orange w-full flex flex-col items-center p-16 gap-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-center flex text-shadow-primary shadow-white text-black">
+        <div className="min-h-1/2 bg-primary-orange w-full flex flex-col items-center px-10 py-36 lg:py-48 gap-20">
+          <h1 className="text-4xl md:text-6xl font-semibold text-center flex text-shadow-primary shadow-white text-black font-manrope">
             Get Started
           </h1>
           <h1 className="2-4/5 lg:w-1/2 text-center text-xl ">
